@@ -1,0 +1,15 @@
+Column,Total Unique Values
+np,13
+bacteria,34
+bac_type,3
+np_synthesis,5
+method,3
+shape,10
+kingdom,2
+phylum,4
+class,6
+order,11
+family,16
+genus,21
+gram,3
+isolated_from,13

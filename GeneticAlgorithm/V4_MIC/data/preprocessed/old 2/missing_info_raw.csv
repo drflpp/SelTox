@@ -1,0 +1,81 @@
+,0
+source,0.0
+np,0.0
+combination,40.15247776365947
+bacteria,0.0
+bac_type,0.0
+bac_type_enc,40.15247776365947
+mdr,40.15247776365947
+strain,40.15247776365947
+np_synthesis,0.0
+method,0.0
+concentration,0.0
+mol_weight (g/mol),0.0
+np_size_min (nm),0.0
+np_size_max (nm),0.0
+np_size_avg (nm),0.0
+shape,0.0
+time_set,0.0
+reference,0.0
+id_bac,0.0
+kingdom,0.0
+subkingdom,95.1715374841169
+clade,55.27318932655655
+phylum,0.0
+class,0.0
+order,0.0
+family,0.0
+genus,0.0
+species,0.0
+gram,0.0
+"min_Incub_period, h",0.0
+"avg_Incub_period, h",0.0
+"max_Incub_period, h",0.0
+"growth_temp, C",0.0
+biosafety_level,0.0
+isolated_from,0.0
+CID,0.0
+Canonical_smiles,0.0
+Valance_electron,0.0
+amw,0.0
+lipinskiHBA,0.0
+lipinskiHBD,0.0
+NumRotatableBonds,0.0
+NumHBD,0.0
+NumHBA,0.0
+NumHeavyAtoms,0.0
+NumAtoms,0.0
+NumHeteroatoms,0.0
+NumAmideBonds,0.0
+FractionCSP3,0.0
+NumRings,0.0
+NumAromaticRings,0.0
+NumAliphaticRings,0.0
+NumSaturatedRings,0.0
+NumHeterocycles,0.0
+NumAromaticHeterocycles,0.0
+NumSaturatedHeterocycles,0.0
+NumAliphaticHeterocycles,0.0
+NumSpiroAtoms,0.0
+NumBridgeheadAtoms,0.0
+NumAtomStereoCenters,0.0
+NumUnspecifiedAtomStereoCenters,0.0
+labuteASA,0.0
+tpsa,0.0
+CrippenClogP,0.0
+CrippenMR,0.0
+chi0v,0.0
+chi1v,0.0
+chi2v,0.0
+chi3v,0.0
+chi4v,0.0
+chi0n,0.0
+chi1n,0.0
+chi2n,0.0
+chi3n,0.0
+chi4n,0.0
+hallKierAlpha,0.0
+kappa1,0.0
+kappa2,0.0
+kappa3,0.0
+Phi,0.0
