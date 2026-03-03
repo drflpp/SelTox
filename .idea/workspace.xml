@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36a785ce-6c75-4ff4-bdae-e5f98394983e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ModelBuilding/FeatureSelection.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/MIC_ko_preprocessed.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/MIC_path_preprocessed.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Preprocessing/preprocessing.ipynb" beforeDir="false" />
-    </list>
+    <list default="true" id="36a785ce-6c75-4ff4-bdae-e5f98394983e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1772125036131</updated>
       <workItem from="1772125037370" duration="3110000" />
-      <workItem from="1772549126510" duration="1158000" />
+      <workItem from="1772549126510" duration="1751000" />
     </task>
     <servers />
   </component>
