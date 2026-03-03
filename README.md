@@ -1,4 +1,4 @@
-![](/Figure.png)
+![](/Figure.jpg)
 
 **Guidelines**
 
