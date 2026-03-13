@@ -13,7 +13,7 @@ x3 = {'n_estimators': 1400, 'learning_rate': 0.09300039576787837, 'max_depth': 4
 
 
 # pipeline = TrainablePipeline1(dataset_name="MIC_dataset", df=pl.DataFrame(),
-#     models=[])
+#     model=[])
 # pipeline.load(Cat_model_path)
 # pipeline_xgb = TrainablePipeline1(dataset_name='df1_MIC_xgb', df=pl.DataFrame(r'D:\NPs_Platform_df1\NPs_Platform_df1\V4_MIC_XGB\data\preprocessed\final_df1_catboost_orig.csv'))
 # pipeline_xgb.fit(XGBRegressor(**x3))

@@ -7,7 +7,7 @@ import polars as pl
 import math
 import pyarrow
 # from Models import V4_transform_MIC_trial
-from V4_models import pipeline
+from models import pipeline
 name_of_pathogenic_bacteria = 'Escherichia coli ATCC 25922' # Pseudomonas aeruginosa None, Escherichia coli, Pseudomonas aeruginosa, Staphylococcus aureus ATCC 29213, Staphylococcus aureus None, Acinetobacter baumannii, Salmonella typhimurium
 name_of_good_bacteria = 'Pseudomonas aeruginosa nan' # Bacillus subtilis None, Escherichia coli ATCC 25922
 

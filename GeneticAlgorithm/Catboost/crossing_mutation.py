@@ -1,5 +1,5 @@
-import V4_cross_modified
-import V4_ga_compd_generation
+import cross_modified
+import ga_compd_generation
 import random
 import pandas as pd
 

@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36a785ce-6c75-4ff4-bdae-e5f98394983e" name="Changes" comment="" />
+    <list default="true" id="36a785ce-6c75-4ff4-bdae-e5f98394983e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/model/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SelTox.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SelTox.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/cross_modified.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/cross_modified.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/crossing_mutation.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/crossing_mutation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/ga_compd_generation.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/ga_compd_generation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/ga_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/ga_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/models/BasePipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/model/BasePipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/models/TrainablePipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/model/TrainablePipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/models/catboost_model_df1.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/model/catboost_model_df1.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/models/model_cat_p17.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/model/model_cat_p17.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/XGBoost/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/XGBoost/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/XGBoost/~$errors.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/XGBoost/~$errors1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/XGBoost/~$errors2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoadingGenomicData/GET_KEGG_ko_path.ipynb" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,31 +34,80 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="3ADRDQrKn8WmGRDEMdtzf7sR1f6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/SelTox&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.ga_main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/SelTox",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ga_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SelTox" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GeneticAlgorithm/Catboost" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GeneticAlgorithm/Catboost/ga_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ga_main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.31033.139" />
+        <option value="bundled-python-sdk-2653e85de345-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.31033.139" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -49,6 +118,7 @@
       <updated>1772125036131</updated>
       <workItem from="1772125037370" duration="3110000" />
       <workItem from="1772549126510" duration="2337000" />
+      <workItem from="1773319179164" duration="4826000" />
     </task>
     <servers />
   </component>
@@ -63,7 +133,14 @@
           <line>1</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/GeneticAlgorithm/Catboost/models.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SelTox$ga_main.coverage" NAME="ga_main Coverage Results" MODIFIED="1773412190648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GeneticAlgorithm/Catboost" />
   </component>
 </project>

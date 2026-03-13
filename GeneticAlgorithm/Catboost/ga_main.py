@@ -1,11 +1,11 @@
 import pandas as pd
-import V4_ga_compd_generation
-import V4_crossing_mutation
+import ga_compd_generation
+import crossing_mutation
 import time
 import os
 import numpy as np
 import matplotlib.pyplot as plt
-from V4_ga_compd_generation import name_of_good_bacteria, name_of_pathogenic_bacteria
+from ga_compd_generation import name_of_good_bacteria, name_of_pathogenic_bacteria
 
 # folder_name = 'P.aeruginosa_vs_B.subtilis'
 folder_name=f'{name_of_pathogenic_bacteria}_vs_{name_of_good_bacteria}'
