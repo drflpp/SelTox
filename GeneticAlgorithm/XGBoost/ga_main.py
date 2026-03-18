@@ -1,11 +1,11 @@
 import pandas as pd
-import V4_ga_compd_generation
-import V4_crossing_mutation
+import ga_compd_generation
+import crossing_mutation
 import time
 import os
 import numpy as np
 import matplotlib.pyplot as plt
-from V4_ga_compd_generation import name_of_good_bacteria, name_of_pathogenic_bacteria
+from ga_compd_generation import name_of_good_bacteria, name_of_pathogenic_bacteria
 
 # folder_name = 'P.aeruginosa_vs_B.subtilis'
 folder_name=f'{name_of_pathogenic_bacteria}_vs_{name_of_good_bacteria}'
@@ -27,10 +27,10 @@ cross_over_rate = 0.2
 def new_generations(Gen, population_size):
     half = int((population_size * 0.5)+1)
     selected = Gen.iloc[:half,:]
-    new = [selected, V4_ga_compd_generation.fitness(V4_ga_compd_generation.population(half))]
+    new = [selected, ga_compd_generation.fitness(ga_compd_generation.population(half))]
     new_generation_input = pd.concat(new)
     new_generation_input.reset_index(drop=True, inplace=True)
-    new_gen = V4_crossing_mutation.evolve_crossing(new_generation_input, cross_over_rate, mutation_rate)
+    new_gen = crossing_mutation.evolve_crossing(new_generation_input, cross_over_rate, mutation_rate)
     new_gen.reset_index(drop=True, inplace=True)
     return new_gen
 
@@ -39,11 +39,11 @@ def new_generations(Gen, population_size):
 means = []
 maxs = []
 def Genetic_Algorithm(generation_number, population_size):
-    Generation1 = V4_ga_compd_generation.fitness(V4_ga_compd_generation.population(population_size)).sort_values('Fitness', ascending=False)
+    Generation1 = ga_compd_generation.fitness(ga_compd_generation.population(population_size)).sort_values('Fitness', ascending=False)
     mean1 = Generation1['Fitness'].mean()
     max1 = Generation1['Fitness'].max()
     Generation1.to_csv(f'output/{folder_name}/pop_size_' + str(population_size) + '_Generation_1.csv')
-    Generation2 = V4_crossing_mutation.evolve_crossing(Generation1, cross_over_rate, mutation_rate)
+    Generation2 = crossing_mutation.evolve_crossing(Generation1, cross_over_rate, mutation_rate)
     mean2 = Generation2['Fitness'].mean()
     max2 = Generation2['Fitness'].max()
     Generation2.to_csv(f'output/{folder_name}/pop_size_' + str(population_size)+ '_Generation_2.csv')
@@ -107,45 +107,3 @@ def final_loop():
 
 
 final_loop()
-
-file_path_1 = r"D:\NPs_Platform_df1\NPs_Platform_df1\V4_MIC_XGB\output\P.aeruginosa_vs_B.subtilis\pop_size_100_Generation_100.csv"
-master_path_1 = r"D:\NPs_Platform_df1\NPs_Platform_df1\V4_MIC_XGB\output\P.aeruginosa_vs_B.subtilis\results_for_runs_Saur_vs_Bsubt.csv"
-
-
-from pathlib import Path
-
-
-def get_results_file(file_path, master_file_path):
-    """
-    Reads the first 31 rows from a run CSV and appends them to a unified master file.
-
-    Parameters:
-        file_path (str or Path): Path to the run CSV file.
-        master_file_path (str or Path): Path to the unified master CSV file.
-    """
-    # Read the CSV
-    df = pd.read_csv(file_path)
-
-    # Take only the first 31 rows
-    df = df.iloc[:31]
-
-    # Ensure master file exists
-    master_file = Path(master_file_path)
-    if master_file.exists():
-        # Append to existing master file
-        df.to_csv(master_file, mode='a', index=False, header=False)
-    else:
-        # Create a new master file
-        df.to_csv(master_file, index=False)
-
-    print(f"Appended results from {file_path} to {master_file_path}")
-
-
-# Example usage:
-# file_path_1 = r"D:\NPs_Platform_df1\NPs_Platform_df1\V4_MIC\output\P.aeruginosa_vs_B.subtilis\pop_size_100_Generation_100.csv"
-# master_file = r"D:\NPs_Platform_df1\NPs_Platform_df1\V4_MIC\output\master_results.csv"
-
-get_results_file(file_path_1, master_path_1)
-
-# print(pd.read_csv(master_path_1))
-# file1 = "D:\NPs_Platform_df1\NPs_Platform_df1\V4_MIC\output\P.aeruginosa_vs_B.subtilis\pop_size_100_Generation_100.csv"
