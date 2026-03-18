@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36a785ce-6c75-4ff4-bdae-e5f98394983e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data and Preprocessing/func.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data and Preprocessing/func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data and Preprocessing/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data and Preprocessing/preprocessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/crossing_mutation.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/crossing_mutation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/ga_compd_generation.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/ga_compd_generation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/ga_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/ga_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/output/Escherichia coli ATCC 25922_vs_Pseudomonas aeruginosa nan/pop_size_110.csv" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/output/Escherichia coli ATCC 25922_vs_Pseudomonas aeruginosa nan/pop_size_110.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/output/Escherichia coli ATCC 25922_vs_Pseudomonas aeruginosa nan/summary_pop_size_100_gen_100.png" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Catboost/output/Escherichia coli ATCC 25922_vs_Pseudomonas aeruginosa nan/summary_pop_size_100_gen_100.png" afterDir="false" />
-    </list>
+    <list default="true" id="36a785ce-6c75-4ff4-bdae-e5f98394983e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +99,7 @@
       <workItem from="1772125037370" duration="3110000" />
       <workItem from="1772549126510" duration="2337000" />
       <workItem from="1773319179164" duration="10759000" />
-      <workItem from="1773831686521" duration="2205000" />
+      <workItem from="1773831686521" duration="2805000" />
     </task>
     <servers />
   </component>
