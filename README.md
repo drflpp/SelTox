@@ -22,9 +22,7 @@ The rational design of nanoparticles (NPs) with selective antimicrobial activity
 - [Experimental Validation](#experimental-validation)
 - [Model Performance Summary](#model-performance-summary)
 - [Reproducibility](#reproducibility)
-- [Citation](#citation)
-- [License](#license)
-- [Contact](#contact)
+
 - [Key Features](#key-features)
 
 ---
@@ -51,7 +49,7 @@ Install all required dependencies using the provided requirements file:
 pip install -r requirements.txt
 ```
 
-The core dependencies include pandas (≥1.5.0), numpy (≥1.23.0), polars (≥0.19.0), scikit-learn (≥1.2.0), xgboost (≥2.0.0), catboost (≥1.2.0), lightgbm (≥4.0.0), optuna (≥3.0.0), shap (≥0.42.0), matplotlib (≥3.6.0), seaborn (≥0.12.0), joblib (≥1.2.0), stable-baselines3 (≥2.0.0), gymnasium (≥0.28.0), and pyyaml (≥6.0). For GPU-accelerated training, ensure you have a CUDA-compatible GPU with appropriate drivers installed.
+[//]: # (The core dependencies include pandas &#40;≥1.5.0&#41;, numpy &#40;≥1.23.0&#41;, polars &#40;≥0.19.0&#41;, scikit-learn &#40;≥1.2.0&#41;, xgboost &#40;≥2.0.0&#41;, catboost &#40;≥1.2.0&#41;, lightgbm &#40;≥4.0.0&#41;, optuna &#40;≥3.0.0&#41;, shap &#40;≥0.42.0&#41;, matplotlib &#40;≥3.6.0&#41;, seaborn &#40;≥0.12.0&#41;, joblib &#40;≥1.2.0&#41;, stable-baselines3 &#40;≥2.0.0&#41;, gymnasium &#40;≥0.28.0&#41;, and pyyaml &#40;≥6.0&#41;. For GPU-accelerated training, ensure you have a CUDA-compatible GPU with appropriate drivers installed.)
 
 ---
 
@@ -212,85 +210,38 @@ The RL environment models nanoparticle design as a sequential decision process w
 
 ---
 
-## Experimental Validation
 
-As proof-of-concept, we synthesized and experimentally validated a top-ranked ZnO nanoparticle formulation predicted to exhibit selective toxicity. The candidate was tested against two pathogenic strains (*Staphylococcus aureus*, *Pseudomonas aeruginosa*) and two non-pathogenic reference strains (*Bacillus subtilis*, *Escherichia coli* ATCC 25922). Experimental MIC measurements confirmed species-selective inhibition patterns consistent with computational predictions. Detailed synthesis protocols, characterization data (transmission electron microscopy, dynamic light scattering, zeta potential measurements), and antimicrobial susceptibility testing procedures are provided in the supplementary materials of the associated publication. Interpretability analysis using SHAP values identified key genomic features driving differential susceptibility including genes involved in oxidative stress response (catalase K00549) and DNA repair pathways (RecN K03111), offering mechanistic insights into the selective antimicrobial action.
-
----
-
-## Model Performance Summary
-
-Cross-validated performance metrics across different feature sets demonstrate the value of genomic enrichment for predictive accuracy:
-
-| Dataset | Model | Train R² | Val R² | Test R² | Test RMSE | Test MAE |
-|---------|-------|----------|---------|---------|-----------|----------|
-| Experimental Parameters | XGBoost | 0.92 | 0.81 | 0.79 | 0.87 | 0.65 |
-| Functional Orthologs | XGBoost | 0.95 | 0.85 | 0.83 | 0.78 | 0.58 |
-| Metabolic Pathways | XGBoost | 0.94 | 0.82 | 0.80 | 0.84 | 0.62 |
-| Functional Orthologs | CatBoost | 0.93 | 0.84 | 0.81 | 0.82 | 0.60 |
-
-The functional ortholog-enriched dataset yielded the highest test set performance (R² = 0.83, RMSE = 0.78), indicating that fine-grained functional annotations provide superior predictive power compared to higher-level pathway groupings or experimental parameters alone.
-
----
-
-## Reproducibility
-
-All computational results reported in the manuscript can be reproduced using the provided code and datasets. Random number generation is controlled through fixed seeds (RANDOM_STATE = 42) set consistently across all modules including NumPy random operations, Python's native random library, and scikit-learn's random state parameters. The reported results were obtained on hardware comprising an Intel Xeon E5-2680 v4 processor (2.40 GHz), NVIDIA Tesla V100 GPU (32 GB memory), 128 GB DDR4 RAM, running Ubuntu 20.04 LTS. Approximate execution times are: data preprocessing (10 minutes), single model training (30-60 minutes), hyperparameter optimization via Optuna (4-8 hours for 100 trials), genetic algorithm execution (2-4 hours for 100 generations with population size 100), and reinforcement learning training (6-12 hours for 5000+ timesteps). Variance in runtime depends primarily on dataset size, feature dimensionality, and hardware specifications.
-
----
-
-## Citation
-
-If you use this code or data in your research, please cite:
-
-```bibtex
-@article{GenSelTox2024,
-  title={AI-Driven Discovery of Selective Antimicrobial Nanoparticles: 
-         Integrating Predictive Modeling, Generative Design, and Experimental Validation},
-  author={[Authors]},
-  journal={[Journal Name]},
-  year={2024},
-  volume={XX},
-  pages={XXX-XXX},
-  doi={10.xxxx/xxxxxx}
-}
-```
-
----
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for full terms. Note that the KEGG database has separate usage restrictions; please consult the [KEGG License](https://www.kegg.jp/kegg/legal.html) for details on commercial applications.
-
----
 
 ## Contact
 
-**Corresponding Author:** [Name]  
-**Email:** [email@institution.edu]  
-**Lab Website:** [https://lab-website.edu]
-
-For bug reports, feature requests, usage questions, and methodological discussions, please use the [GitHub Issues](https://github.com/yourusername/GenSelTox/issues) page. Contributions are welcome; please refer to CONTRIBUTING.md for submission guidelines.
 
 ---
 
-## Key Features
+[//]: # (## Key Features)
 
-✅ Comprehensive antibacterial activity dataset (2,098 curated measurements) with genomic enrichment via KEGG functional orthologs and metabolic pathways
+[//]: # ()
+[//]: # (✅ Comprehensive antibacterial activity dataset &#40;2,098 curated measurements&#41; with genomic enrichment via KEGG functional orthologs and metabolic pathways)
 
-✅ Multi-algorithm machine learning framework supporting XGBoost, CatBoost, LightGBM, and Random Forest implementations
+[//]: # ()
+[//]: # (✅ Multi-algorithm machine learning framework supporting XGBoost, CatBoost, LightGBM, and Random Forest implementations)
 
-✅ Automated feature selection pipeline incorporating correlation analysis, variance thresholding, model-intrinsic feature importance, and permutation importance
+[//]: # ()
+[//]: # (✅ Automated feature selection pipeline incorporating correlation analysis, variance thresholding, model-intrinsic feature importance, and permutation importance)
 
-✅ Hyperparameter optimization infrastructure using Bayesian optimization (Optuna) for top-performing models
+[//]: # ()
+[//]: # (✅ Hyperparameter optimization infrastructure using Bayesian optimization &#40;Optuna&#41; for top-performing models)
 
-✅ Dual generative design approaches: genetic algorithms and reinforcement learning for nanoparticle discovery
+[//]: # ()
+[//]: # (✅ Dual generative design approaches: genetic algorithms and reinforcement learning for nanoparticle discovery)
 
-✅ Model interpretability through SHAP values and feature importance analysis revealing mechanistic drivers of antimicrobial selectivity
+[//]: # ()
+[//]: # (✅ Model interpretability through SHAP values and feature importance analysis revealing mechanistic drivers of antimicrobial selectivity)
 
-✅ Experimental validation demonstrating successful prediction-guided synthesis and testing of selective ZnO nanoparticles
+[//]: # ()
+[//]: # (✅ Experimental validation demonstrating successful prediction-guided synthesis and testing of selective ZnO nanoparticles)
 
----
+[//]: # ()
+[//]: # (---)
 
 **Last Updated:** March 2026  
 **Version:** 1.0.0
