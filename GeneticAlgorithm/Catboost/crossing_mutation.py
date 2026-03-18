@@ -6,7 +6,7 @@ import pandas as pd
 population_size = 100
 mutation_rate = 0.2
 cross_over_rate = 0.2
-df = V4_ga_compd_generation.fitness(V4_ga_compd_generation.population(population_size)).sort_values('Fitness', ascending=False)
+df = ga_compd_generation.fitness(ga_compd_generation.population(population_size)).sort_values('Fitness', ascending=False)
 df = df.reset_index(drop=True)
 
 def evolve_crossing(df_compound_list, cross_over_rate, mutation_rate):
@@ -33,15 +33,15 @@ def evolve_crossing(df_compound_list, cross_over_rate, mutation_rate):
         # individual2 = unique[random.randrange(0, len(unique), 1)]
         # print(individual1,'\n',individual2)
         #cross_individual = cross_normal.crossover_individuals(individual1, individual2, cross_over_rate)
-        cross_individual = V4_cross_modified.to_crossover(individual1, individual2, cross_over_rate)
-        mutate_individual = V4_cross_modified.to_mutation(cross_individual, mutation_rate)
+        cross_individual = cross_modified.to_crossover(individual1, individual2, cross_over_rate)
+        mutate_individual = cross_modified.to_mutation(cross_individual, mutation_rate)
         selected_ind.append(mutate_individual)
         i +=1
     dframe =pd.DataFrame(selected_ind, columns=df_compound_list.columns)
     #dframe is crossed (new gen) population
     dframe_copy = dframe.copy()
     dframe_copy= dframe_copy.iloc[: , :-6]
-    dframe_evolved = V4_ga_compd_generation.fitness(dframe_copy)
+    dframe_evolved = ga_compd_generation.fitness(dframe_copy)
     #check fitness of new generation
     selection = []
     for a in range(len(dff)):

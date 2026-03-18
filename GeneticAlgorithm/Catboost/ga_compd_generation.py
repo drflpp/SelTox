@@ -12,13 +12,13 @@ name_of_pathogenic_bacteria = 'Escherichia coli ATCC 25922' # Pseudomonas aerugi
 name_of_good_bacteria = 'Pseudomonas aeruginosa nan' # Bacillus subtilis None, Escherichia coli ATCC 25922
 
 population_size = 100
-df_MIC = pd.read_csv(r'D:\NPs_Platform_df1\NPs_Platform_df1\V4_MIC\data\preprocessed\final_df1_catboost_orig.csv', low_memory=False, index_col=0)
-df_MIC_bacteria = pd.read_csv(r'D:\NPs_Platform_df1\NPs_Platform_df1\V4_MIC\data\preprocessed\final_df1_catboost_orig_bact.csv', low_memory=False, index_col=0)
+df_MIC = pd.read_csv(r'D:\Projects\SelTox\GeneticAlgorithm\Catboost\data\final_df1_catboost_orig.csv', low_memory=False, index_col=0)
+df_MIC_bacteria = pd.read_csv(r'D:\Projects\SelTox\GeneticAlgorithm\Catboost\data\final_df1_catboost_orig_bact.csv', low_memory=False, index_col=0)
 
 X = df_MIC_bacteria.drop(['MIC_NP___g_mL_'], axis=1) # no need for concentration, zoi or gi as all of these parameters will be predicted
 X['Bio_component_class'] = X['Bio_component_class'].fillna('none')
 # X = X[X['amw'] == 107.868]
-old_df = pd.read_csv(r'D:\NPs_Platform_df1\NPs_Platform_df1\V4_MIC\data\preprocessed\final_df1_bacteria_strain.csv', index_col=0)
+old_df = pd.read_csv(r'D:\Projects\SelTox\GeneticAlgorithm\Catboost\data\final_df1_catboost_orig_bact.csv', index_col=0)
 # print('old', old_df.columns)
 # X = X[expected_features]  # reorder columns
 material_list = ['amw', 'Source_origin', 'Capping_type', 'chi0v',  'Template_type',
