@@ -15,39 +15,8 @@ x3 = {'n_estimators': 1400, 'learning_rate': 0.09300039576787837, 'max_depth': 4
 pipeline = TrainablePipeline1(dataset_name="MIC_dataset", df=pl.DataFrame(),
     models=[])
 pipeline.load(Cat_model_path)
-# pipeline_xgb = TrainablePipeline1(dataset_name='df1_MIC_xgb', df=pl.DataFrame(r'D:\NPs_Platform_df1\NPs_Platform_df1\V4_MIC\data\preprocessed\final_df1_catboost_orig_bact.csv'))
-# pipeline_xgb.fit(XGBRegressor(**x3))
 
 
 
-def cat_predict(input_data):
-    expected_features = ['np_size_max__nm_',
-                         'np_synthesis',
-                         'np_size_min__nm_',
-                         'np_size_avg__nm_',
-                         'method',
-                         'Temperature_for_extract__C',
-                         'Duration_preparing_extract__min',
-                         'Solvent_for_extract',
-                         'time_set__hours_',
-                         'shape',
-                         'coating',
-                         'Valance_electron',
-                         'prim_specific_habitat',
-                         'chi0v',
-                         'amw',
-                         'min_Incub_period__h',
-                         'K00058',
-                         'max_Incub_period__h',
-                         'K12472',
-                         'mdr',
-                         'K07009',
-                         'K17939',
-                         'K14198',
-                         'K07486']
 
 
-    x = input_data
-    x = x[expected_features]
-    predict = mod.predict(x)
-    return predict
