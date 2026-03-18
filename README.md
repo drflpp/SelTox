@@ -1,6 +1,6 @@
 # GenSelTox: AI-Driven Discovery Platform for Selective Antimicrobial Nanoparticles
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![DOI](https://img.shields.io/badge/DOI-10.xxxx%2Fxxxxxx-blue)](https://doi.org/10.xxxx/xxxxxx)
 
@@ -508,8 +508,6 @@ random.seed(RANDOM_STATE)
 ---
 
 ## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 **Note:** The KEGG database has its own usage restrictions. Please refer to the [KEGG License](https://www.kegg.jp/kegg/legal.html) for commercial use.
 
